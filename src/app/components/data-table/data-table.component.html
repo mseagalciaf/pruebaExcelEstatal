@@ -1,0 +1,18 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Apellido</th>
+        <th scope="col">Edad</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of data; index as i">
+        <th scope="row">{{i+1}}</th>
+        <td>{{item.fechahora}}</td>
+        <td>{{item.operador}}</td>
+        <td>{{item.evt_codigo}}</td>
+      </tr>
+    </tbody>
+  </table>

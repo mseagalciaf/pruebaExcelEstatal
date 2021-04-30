@@ -1,0 +1,14 @@
+<h2 class="input-group">Cargue el primer archivo</h2>
+<div class="row">
+    <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label >seleecionar archivo</label>
+        </div>
+        <div class="form-group">
+            <input type="file" (change)="onFileChange($event)" class="form-control" formControlName="file">
+        </div>
+        <div>
+            <button class="btn btn-info" [disabled]="checkoutForm.invalid">Cargar</button>
+        </div>
+    </form>
+</div>
